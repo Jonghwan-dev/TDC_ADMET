@@ -1,4 +1,5 @@
 import torch
+import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from molfeat.trans.pretrained import PretrainedDGLTransformer
 from sklearn.metrics import average_precision_score, auc, precision_recall_curve
