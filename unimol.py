@@ -1,14 +1,11 @@
 """
 unimodal/unimol3d.py
 """
-import logging
 import torch
 import torch.nn as nn
 from torch.nn.utils.rnn import pad_sequence
 from unimol_tools import UniMolRepr
 
-# unimol_tools 라이브러리의 INFO 로그 억제 - log 심함;;
-logging.getLogger("unimol_tools").setLevel(logging.WARNING)
 
 class UniMol_3D(nn.Module):
 

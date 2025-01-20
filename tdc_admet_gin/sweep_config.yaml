@@ -1,0 +1,21 @@
+# sweep_config.yaml
+method: grid
+program: trainer.py 
+metric:
+  name: test_auprc
+  goal: maximize
+parameters:
+  transformer_kind:
+    values: [
+    "gin_supervised_infomax"
+    ]
+  hidden_dim:
+    values: [256, 512]
+  num_layers:
+    values: [5, 6, 7]
+  lr:
+    values: [1e-4, 1e-5]
+  loss:
+    values: ["BCE", "focal"]
+  optimizer:
+    values: ["rmsprop"]
