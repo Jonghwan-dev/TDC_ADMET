@@ -2,3 +2,6 @@ data/
 SchNet_Pretrained_Output/
 wandb/
 gin_supervised_contextpred_pre_trained.pth
+tdc_admet_gin/.ckpt/
+tdc_admet_gin/data/
+tdc_admet_gin/wandb/
